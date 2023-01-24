@@ -1,15 +1,16 @@
-import { Container, Flex, Box } from "@/styles/Global";
-import { Text } from "@/styles/Text";
-import { Footer as FooterWrapper } from "./style";
-import { UserImage } from "@/pages/home/style";
-import { userData } from "@/utils/userData";
-import { FaLinkedinIn, FaInstagram, FaFacebookF } from "react-icons/fa";
-import { Button } from "@/styles/Buttons";
+import { Container, Flex, Box } from "@/styles/Global"
+import { Text } from "@/styles/Text"
+import { Footer as FooterWrapper } from "./style"
+import { UserImage } from "@/pages/home/style"
+import { userData } from "@/utils/userData"
+import { FaLinkedinIn, FaGithub } from "react-icons/fa"
+import { SiCodewars } from "react-icons/si"
+import { Button } from "@/styles/Buttons"
 // import { HandEffect } from "../HandEffect";
 
 export const Footer = (): JSX.Element => {
   return (
-    <FooterWrapper id="social-media">
+    <FooterWrapper id='social-media'>
       <Container>
         <Flex>
           <UserImage
@@ -20,10 +21,10 @@ export const Footer = (): JSX.Element => {
             height={"70px"}
           />
           <Box css={{ marginLeft: "$2" }}>
-            <Text type="heading4" color="grey5" css={{ marginBottom: "$2" }}>
+            <Text type='heading4' color='grey5' css={{ marginBottom: "$2" }}>
               Thank you! {/* <HandEffect /> */}
             </Text>
-            <Text type="body1" color="grey2">
+            <Text type='body1' color='grey2'>
               Follow me on my social networks and let's talk
             </Text>
           </Box>
@@ -36,28 +37,28 @@ export const Footer = (): JSX.Element => {
           }}
         >
           <Button
-            className="instagram"
-            type="circle"
-            as="a"
-            target="_blank"
-            href={`https://instagram.com/${userData.instagramUser}`}
+            className='codewars'
+            type='circle'
+            as='a'
+            target='_blank'
+            href={`https://codewars.com/users/${userData.codewars}`}
           >
-            <FaInstagram />
+            <SiCodewars />
           </Button>
           <Button
-            className="facebook"
-            type="circle"
-            as="a"
-            target="_blank"
-            href={`https://fb.com/${userData.facebookUser}`}
+            className='github'
+            type='circle'
+            as='a'
+            target='_blank'
+            href={`https://github.com/${userData.githubUser}`}
           >
-            <FaFacebookF />
+            <FaGithub />
           </Button>
           <Button
-            className="linkedin"
-            type="circle"
-            as="a"
-            target="_blank"
+            className='linkedin'
+            type='circle'
+            as='a'
+            target='_blank'
             href={`https://linkedin.com/in/${userData.linkedinUser}`}
           >
             <FaLinkedinIn />
@@ -65,5 +66,5 @@ export const Footer = (): JSX.Element => {
         </Flex>
       </Container>
     </FooterWrapper>
-  );
-};
+  )
+}

@@ -65,13 +65,13 @@ export const ContactCardImage = styled("div", {
   justifyContent: "center",
 
   ["&.wpp"]: {
-    background: "linear-gradient(180deg, #50C571 0%, #50CF9A 100%)",
+    background: "linear-gradient(180deg, #34A0A4 0%, #99D98C 100%)",
   },
   ["&.email"]: {
-    background: "linear-gradient(180deg, #BD3B9B 0%, #EE5BC7 100%)",
+    background: "linear-gradient(180deg, #8900F2 0%, #D100D1 100%)",
   },
   ["&.linkedin"]: {
-    background: "linear-gradient(180deg, #4E73FF 0%, #506CCF 100%)",
+    background: "linear-gradient(180deg, #023E8A 0%, #0096C7 100%)",
   }
 });
 

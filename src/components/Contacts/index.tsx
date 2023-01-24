@@ -40,7 +40,7 @@ export const Contacts = () => {
             </ContactSectionText>
           </motion.div>
           <ContactsCards>
-            <ContactCard>
+            {/* <ContactCard>
               <ContactCardImage className="wpp">
                 <FaWhatsapp color="#fff" size={24} />
               </ContactCardImage>
@@ -62,7 +62,7 @@ export const Contacts = () => {
                   Talk Now
                 </Text>
               </ContactCardContent>
-            </ContactCard>
+            </ContactCard> */}
 
             <ContactCard>
               <ContactCardImage className="email">

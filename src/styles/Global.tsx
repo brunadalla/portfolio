@@ -1,8 +1,8 @@
-import { createTheme, globalCss, styled } from "@stitches/react";
-import { ReactNode } from "react";
+import { createTheme, globalCss, styled } from "@stitches/react"
+import { ReactNode } from "react"
 
 interface GlobalStyleProps {
-  children: ReactNode;
+  children: ReactNode
 }
 
 export const Container = styled("div", {
@@ -13,17 +13,17 @@ export const Container = styled("div", {
   "@tablet": {
     maxWidth: "$containerTablet",
   },
-});
+})
 
 export const Flex = styled("div", {
   display: "flex",
   gap: "$1",
   alignItems: "center",
-});
+})
 
 export const Box = styled("div", {
   maxWidth: "100%",
-});
+})
 
 export const colors = {
   color: {
@@ -65,7 +65,7 @@ export const colors = {
       color: "$grey6",
     },
   },
-};
+}
 
 export const globalStyles = globalCss({
   "*": {
@@ -78,14 +78,13 @@ export const globalStyles = globalCss({
     scrollBehavior: "smooth",
   },
   a: { textDecoration: "none" },
-});
+})
 
 export const GlobalStyle = ({ children }: GlobalStyleProps): JSX.Element => {
-
   const theme = createTheme({
     colors: {
-      brand1: "#623CEA",
-      brand2: "#311E75",
+      brand1: "#e500a4",
+      brand2: "#7D0059",
 
       grey0: "#0A0A0B",
       grey1: "#121214",
@@ -94,9 +93,9 @@ export const GlobalStyle = ({ children }: GlobalStyleProps): JSX.Element => {
       grey4: "#F8F9FA",
       grey5: "#F8F9FA",
 
-      socialInstagram: "#CF50AC",
-      socialFacebook: "#506CCF",
-      socialLinkedin: "#0E76A8",
+      socialCodewars: "#a11d33",
+      socialGitHub: "#34A0A4",
+      socialLinkedin: "#023E8A",
 
       whiteFixed: "#ffffff",
       mode: "#ffffff",
@@ -147,13 +146,13 @@ export const GlobalStyle = ({ children }: GlobalStyleProps): JSX.Element => {
       1: "0.5rem",
       2: "0.25rem",
     },
-  });
+  })
 
-  globalStyles();
+  globalStyles()
 
   const App = styled("div", {
     minHeight: "100vh",
-  });
+  })
 
-  return <App className={theme}>{children}</App>;
-};
+  return <App className={theme}>{children}</App>
+}

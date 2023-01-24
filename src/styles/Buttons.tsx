@@ -1,5 +1,5 @@
-import { styled } from "@/styles/stitches.config";
-import { colors } from "@/styles/Global";
+import { styled } from "@/styles/stitches.config"
+import { colors } from "@/styles/Global"
 
 export const Button = styled("button", {
   height: "3rem",
@@ -113,24 +113,24 @@ export const Button = styled("button", {
         ["& + a"]: {
           marginLeft: "$2",
         },
-        ["&.instagram"]: {
-          backgroundColor: "$socialInstagram",
-          borderColor: "$socialInstagram",
+        ["&.codewars"]: {
+          backgroundColor: "$socialCodewars",
+          borderColor: "$socialCodewars",
           color: "$whiteFixed",
           "&:hover": {
             backgroundColor: "transparent",
-            borderColor: "$socialInstagram",
-            color: "$socialInstagram",
+            borderColor: "$socialCodewars",
+            color: "$socialCodewars",
           },
         },
-        ["&.facebook"]: {
-          backgroundColor: "$socialFacebook",
-          borderColor: "$socialFacebook",
+        ["&.github"]: {
+          backgroundColor: "$socialGitHub",
+          borderColor: "$socialGitHub",
           color: "$whiteFixed",
           "&:hover": {
             backgroundColor: "transparent",
-            borderColor: "$socialFacebook",
-            color: "$socialFacebook",
+            borderColor: "$socialGitHub",
+            color: "$socialGitHub",
           },
         },
         ["&.linkedin"]: {
@@ -171,4 +171,4 @@ export const Button = styled("button", {
     },
     ...colors,
   },
-});
+})
