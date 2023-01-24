@@ -34,7 +34,7 @@ export const Project = (): JSX.Element => {
       const json = await data.json()
       const filtered = json.filter(
         (repo: ReposType) =>
-          repo.name !== "brunadalla" && !repo.fork)
+          repo.name !== "brunadalla" && repo.name !== "portfolio" && !repo.fork)
 
       setRepositories(filtered)
 
