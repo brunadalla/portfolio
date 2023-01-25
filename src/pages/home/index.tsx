@@ -44,22 +44,19 @@ export const Home = (): JSX.Element => {
                 width={"48px"}
                 height={"48px"}
               />
-              <Text color="grey4">Hello, my name is {userData.nameUser}</Text>
+              <Text color="grey4">Hii, my name is {userData.nameUser} and .. </Text>
             </Flex>
             <Text as="h1" type="heading1" color="grey5">
-            I{" "}
-              <Text as="span" type="heading1" color="brand1">
-                love
+            .. Welcome {" "}
+              <Text as="span" type="heading1" color="grey5">
+                to my
               </Text>{" "}
-              creating and{" "}
               <Text as="span" type="heading1" color="brand1">
-                developing
+                Portfolio!
               </Text>{" "}
-              projects
             </Text>
             <Text type="body1" color="grey2">
-              Discover here in this environment, created especially for you, all
-              my projects and technologies
+              Here, you will get a chance to know more about me and see all the projects I've done or participated as a <b>Full Stack Developer</b> ✨
             </Text>
             <HeaderButtonsArea>
               <Button as="a" type="primary" href="#projects">
@@ -97,7 +94,7 @@ export const Home = (): JSX.Element => {
               <Text as="p" type="body1" color="grey2">
                 Some of my{" "}
                 <Text as="span" color="brand5">
-                  side projects
+                  projects that I consider the most
                 </Text>
               </Text>
             </ProjectsAreaSocialMediaMessage>
